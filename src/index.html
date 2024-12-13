@@ -13,6 +13,16 @@
       rel="stylesheet"
     />
 
+    <!-- icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <!-- tailwind -->
     <link rel="stylesheet" href="build/styles.css" />
   </head>
@@ -24,15 +34,29 @@
     </h1>
     <!-- jit mode -->
     <h3
-      class="text-center font-light text-[#4F4F4F] text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px]"
+      class="text-center font-light mb-3 text-[#4F4F4F] text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px]"
     >
       Keep calm & travel on
     </h3>
 
+    <div class="w-6/12 mx-auto flex gap-4">
+      <input
+        type="text"
+        class="border-2 border-solid flex-1 outline-none px-[10px] py-[10px] rounded-lg focus:border-success transition-all duration-200"
+        placeholder="Search your destination"
+      />
+      <button
+        before=""
+        class="group bg-white text-success border border-gray-300 px-[10px] py-[10px] rounded-[10px] overflow-hidden relative before:content-[attr(before)] before:absolute before:top-0 before:bottom-0 before:left-0 before:w-full before:bg-success before:text-white before:scale-0 hover:before:scale-100 before:transition-all before:duration-300"
+      >
+        <span class="relative z-[10] group-hover:text-white">Submit</span>
+      </button>
+    </div>
+
     <div
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-3 w-9/12 mx-auto mt-5"
     >
-      <div class="item flex flex-col items-center">
+      <div class="item p-3 flex flex-col items-center shadow-md rounded-xl">
         <img
           src="https://th.bing.com/th?id=OIP.SsVkfFpYfo2UMJ7_RwY6nAHaJQ&w=223&h=279&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
           alt=""
@@ -41,9 +65,14 @@
         <span class="font-semibold text-xl my-3 text-success"
           >Enjoy the nature</span
         >
-        <span class="text-gray-500">6.789 points</span>
+        <span class="text-gray-500 mb-3">6.789 points</span>
+        <button
+          class="bg-primary text-white p-2 rounded-xl lg:hover:opacity-70 transition-all"
+        >
+          Click me
+        </button>
       </div>
-      <div class="item flex flex-col items-center">
+      <div class="item p-3 flex flex-col items-center shadow-md rounded-xl">
         <img
           src="https://th.bing.com/th?id=OIP.SsVkfFpYfo2UMJ7_RwY6nAHaJQ&w=223&h=279&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
           alt=""
@@ -52,9 +81,14 @@
         <span class="font-semibold text-xl my-3 text-success"
           >Enjoy the nature</span
         >
-        <span class="text-gray-500">6.789 points</span>
+        <span class="text-gray-500 mb-3">6.789 points</span>
+        <button
+          class="bg-primary text-white p-2 rounded-xl lg:hover:opacity-70 transition-all"
+        >
+          Click me
+        </button>
       </div>
-      <div class="item flex flex-col items-center">
+      <div class="item p-3 flex flex-col items-center shadow-md rounded-xl">
         <img
           src="https://th.bing.com/th?id=OIP.SsVkfFpYfo2UMJ7_RwY6nAHaJQ&w=223&h=279&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
           alt=""
@@ -63,7 +97,12 @@
         <span class="font-semibold text-xl my-3 text-success"
           >Enjoy the nature</span
         >
-        <span class="text-gray-500">6.789 points</span>
+        <span class="text-gray-500 mb-3">6.789 points</span>
+        <button
+          class="bg-primary text-white p-2 rounded-xl lg:hover:opacity-70 transition-all"
+        >
+          Click me
+        </button>
       </div>
     </div>
   </body>
