@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <!-- icon link -->
+    <link rel="icon" href="./assets/icon_web.jpg" type="image/icon type" />
+
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,83 +30,103 @@
     <link rel="stylesheet" href="build/styles.css" />
   </head>
   <body>
-    <h1
-      class="text-center font-bold pt-24 text-lg sm:text-2xl md:text-3xl lg:text-4xl mb-3 text-primary"
-    >
-      Live anywhere
-    </h1>
-    <!-- jit mode -->
-    <h3
-      class="text-center font-light mb-3 text-[#4F4F4F] text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px]"
-    >
-      Keep calm & travel on
-    </h3>
+    <div class="root">
+      <div class="content-wrapper font-poppins py-5">
+        <!-- header -->
+        <header class="px-2 w-full md:w-[90%] lg:w-[80%] mx-auto relative">
+          <nav class="flex flex-row justify-between items-center">
+            <div
+              class="logo basis-3/6 lg:basis-1/6 text-lg lg:text-2xl font-bold p-2 cursor-pointer"
+            >
+              <h1>Tailwind CSS</h1>
+            </div>
 
-    <div class="w-6/12 mx-auto flex gap-4">
-      <input
-        type="text"
-        class="border-2 border-solid flex-1 outline-none px-[10px] py-[10px] rounded-lg focus:border-success transition-all duration-200"
-        placeholder="Search your destination"
-      />
-      <button
-        before=""
-        class="group bg-white text-success border border-gray-300 px-[10px] py-[10px] rounded-[10px] overflow-hidden relative before:content-[attr(before)] before:absolute before:top-0 before:bottom-0 before:left-0 before:w-full before:bg-success before:text-white before:scale-0 hover:before:scale-100 before:transition-all before:duration-300"
-      >
-        <span class="relative z-[10] group-hover:text-white">Submit</span>
-      </button>
+            <!-- menu -->
+            <ul class="ct-menu hidden">
+              <li class="ct-menu-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="ct-menu-item">
+                <a href="#">Product</a>
+              </li>
+              <li class="ct-menu-item">
+                <a href="#">Blog</a>
+              </li>
+              <li class="ct-menu-item">
+                <a href="#">About</a>
+              </li>
+              <li class="ct-menu-item">
+                <a href="#">Contact</a>
+              </li>
+              <li class="ct-menu-item">
+                <a href="#">Style guide</a>
+              </li>
+              <li class="ct-menu-item">
+                <a href="#">Trần Nam</a>
+              </li>
+            </ul>
+
+            <!-- cart -->
+            <ul
+              class="basis-3/6 lg:basis-1/6 flex flex-row justify-end align-center gap-2"
+            >
+              <li
+                class="ct-menu-item py-1 flex flex-row items-center gap-2 cursor-pointer uppercase text-[16px] text-gray-500"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
+                <span class="text-black font-semibold">Cart</span>
+                <span
+                  class="text-[12px] w-5 h-5 rounded-full bg-red-400 text-white text-center flex items-center justify-center"
+                >
+                  9</span
+                >
+              </li>
+
+              <!-- toggle menu -->
+              <div
+                class="flex items-center cursor-pointer hover:scale-110 lg:hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 toggle-menu"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </div>
+            </ul>
+          </nav>
+        </header>
+
+        <!-- main -->
+        <main></main>
+
+        <!-- footer -->
+        <footer></footer>
+      </div>
     </div>
 
-    <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-3 w-9/12 mx-auto mt-5"
-    >
-      <div class="item p-3 flex flex-col items-center shadow-md rounded-xl">
-        <img
-          src="https://th.bing.com/th?id=OIP.SsVkfFpYfo2UMJ7_RwY6nAHaJQ&w=223&h=279&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
-          alt=""
-          class="rounded-2xl"
-        />
-        <span class="font-semibold text-xl my-3 text-success"
-          >Enjoy the nature</span
-        >
-        <span class="text-gray-500 mb-3">6.789 points</span>
-        <button
-          class="bg-primary text-white p-2 rounded-xl lg:hover:opacity-70 transition-all"
-        >
-          Click me
-        </button>
-      </div>
-      <div class="item p-3 flex flex-col items-center shadow-md rounded-xl">
-        <img
-          src="https://th.bing.com/th?id=OIP.SsVkfFpYfo2UMJ7_RwY6nAHaJQ&w=223&h=279&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
-          alt=""
-          class="rounded-2xl"
-        />
-        <span class="font-semibold text-xl my-3 text-success"
-          >Enjoy the nature</span
-        >
-        <span class="text-gray-500 mb-3">6.789 points</span>
-        <button
-          class="bg-primary text-white p-2 rounded-xl lg:hover:opacity-70 transition-all"
-        >
-          Click me
-        </button>
-      </div>
-      <div class="item p-3 flex flex-col items-center shadow-md rounded-xl">
-        <img
-          src="https://th.bing.com/th?id=OIP.SsVkfFpYfo2UMJ7_RwY6nAHaJQ&w=223&h=279&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
-          alt=""
-          class="rounded-2xl"
-        />
-        <span class="font-semibold text-xl my-3 text-success"
-          >Enjoy the nature</span
-        >
-        <span class="text-gray-500 mb-3">6.789 points</span>
-        <button
-          class="bg-primary text-white p-2 rounded-xl lg:hover:opacity-70 transition-all"
-        >
-          Click me
-        </button>
-      </div>
-    </div>
+    <!-- script -->
+    <script src="./js/index.js"></script>
   </body>
 </html>

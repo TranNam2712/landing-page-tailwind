@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   font-family: "Poppins", sans-serif;
+} */
+
+/* ct = custom tailwind */
+
+.ct-menu {
+  @apply w-[50%] p-2 lg:p-0 lg:basis-4/6 lg:flex flex-row justify-center gap-8 uppercase text-[16px] text-gray-500 absolute lg:static bg-slate-300 lg:bg-transparent bottom-[-500%] right-5 lg:right-0 shadow-lg lg:shadow-none text-center rounded-3xl;
+}
+
+.ct-menu-item {
+  @apply hover:text-black relative lg:after:absolute lg:after:w-0 lg:after:h-0.5 lg:after:bg-red-300 lg:after:bottom-0 lg:after:left-0 hover:lg:after:w-full lg:after:transition-all lg:after:ease-in-out lg:after:duration-300;
 }
