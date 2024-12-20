@@ -7,9 +7,12 @@
 } */
 
 /* ct = custom tailwind */
+.ct-scrollbar {
+  @apply overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-thumb]:rounded-full  dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500;
+}
 
 .ct-menu {
-  @apply w-[50%] p-2 lg:p-0 lg:basis-4/6 lg:flex flex-row justify-center gap-8 uppercase text-[16px] text-gray-500 absolute lg:static bg-slate-300 lg:bg-transparent bottom-[-500%] right-5 lg:right-0 shadow-lg lg:shadow-none text-center rounded-3xl;
+  @apply w-[50%] p-2 lg:p-0 lg:basis-4/6 lg:flex flex-row justify-center gap-8 uppercase text-[16px] text-gray-500 absolute z-20 lg:static bg-slate-300 lg:bg-transparent top-[100%] right-0 lg:right-0 shadow-lg lg:shadow-none text-center rounded-3xl;
 }
 
 .ct-menu-item {
