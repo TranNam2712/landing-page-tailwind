@@ -145,27 +145,51 @@
         <main class="w-full">
           <!-- story -->
           <div
-            class="story flex flex-col justify-center items-center text-center py-20 px-5 lg:px-32 gap-y-6"
+            class="flex flex-col justify-center items-center max w-[70%] mx-auto"
           >
-            <h3 class="font-medium text-3xl max-w-[70%]">
-              Even the all -powerful Pointing has no control about the blind
-              texts.
-            </h3>
-            <p class="max-w-[70%] lg:max-w-[60%] text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-              ullam quis et dignissimos nisi eos veritatis vero porro saepe
-              harum dolores, placeat libero sed? Necessitatibus ea voluptate ad
-              ut ratione?
-            </p>
-            <div class="relative group">
-              <a
-                href="#"
-                class="text-black-orange/70 text-lg group-hover:text-black-orange transition-all ease-in-out duration-200"
-                >Read the full story</a
+            <!-- title -->
+            <div
+              class="title flex justify-center items-center text-center w-[250px] mt-12"
+            >
+              <span class="h-[1px] w-[20%] bg-gray-500"></span>
+              <h4 class="text-gray-500 basis-2/3 w-[50%] mx-2">Our Story</h4>
+              <span class="h-[1px] w-[20%] bg-gray-500"></span>
+            </div>
+
+            <!-- story content -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 w-full my-12"
+            >
+              <video
+                src="./assets/videos/home/story.mp4"
+                autoplay
+                loop
+                muted
+                class="min-h-[300px]"
+              ></video>
+              <div
+                class="story flex flex-col justify-center items-center lg:items-start text-center lg:text-left gap-y-6 px-6"
               >
-              <span
-                class="absolute left-0 bottom-[-2px] w-full h-[1px] bg-black-orange/70 group-hover:bg-black-orange transition-all ease-in-out duration-200"
-              ></span>
+                <h3 class="font-medium text-3xl max-w-[90%] lg:max-w-[80%]">
+                  What the Coffee Story means to us?
+                </h3>
+                <p class="max-w-[90%] lg:max-w-[60%] text-gray-500">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  ullam quis et dignissimos nisi eos veritatis vero porro saepe
+                  harum dolores, placeat libero sed? Necessitatibus ea voluptate
+                  ad ut ratione?
+                </p>
+                <div class="relative group">
+                  <a
+                    href="#"
+                    class="text-black-orange/70 text-lg group-hover:text-black-orange transition-all ease-in-out duration-200"
+                    >Read the full story</a
+                  >
+                  <span
+                    class="absolute left-0 bottom-[-2px] w-full h-[1px] bg-black-orange/70 group-hover:bg-black-orange transition-all ease-in-out duration-200"
+                  ></span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -175,7 +199,7 @@
           >
             <!-- title -->
             <div
-              class="title flex justify-center items-center text-center w-[250px] mb-12"
+              class="title flex justify-center items-center text-center w-[250px] mt-12"
             >
               <span class="h-[1px] w-[20%] bg-gray-500"></span>
               <h4 class="text-gray-500 basis-2/3 w-[50%] mx-2">
@@ -238,7 +262,7 @@
           >
             <!-- title -->
             <div
-              class="title flex justify-center items-center text-center w-[250px] mb-12"
+              class="title flex justify-center items-center text-center w-[250px] mt-12"
             >
               <span class="h-[1px] w-[20%] bg-gray-500"></span>
               <h4 class="text-gray-500 basis-2/3 w-[50%] mx-2">
